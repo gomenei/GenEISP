@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Your project description">
+  <meta name="keywords" content="Your, Keywords, Here">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Project Title</title>
+  
+  <!-- CSS imports -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  
+  <!-- Custom CSS -->
+  <style>
+    .publication-title {
+      margin-bottom: 0.5em;
+    }
+    .publication-authors {
+      margin-bottom: 1em;
+    }
+    .hero.is-light {
+      background-color: #f5f5f5;
+    }
+    .external-link {
+      margin-right: 0.5em;
+    }
+    .has-bg-img {
+      background: url('your-background-image.jpg') center center;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://your-website.com">
+        <span class="icon">
+          <i class="fas fa-home"></i>
+        </span>
+      </a>
+      <a class="navbar-item" href="https://your-website.com/projects">
+        Projects
+      </a>
+      <a class="navbar-item" href="https://your-website.com/publications">
+        Publications
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Generalizable Neural Electromagnetic
+Inverse Scattering<br>
+            <small>
+              <span style="font-size: 60%;">arxiv 2025</span>
+            </small>
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+                <a href="mailto:ez_cheng@stu.pku.edu.cn">Yizhe Cheng</a><sup>* 1</sup>,
+            </span>
+            <span class="author-block">
+                <a href="mailto:tianchunxun@stu.pku.edu.cn">Chunxun Tian</a><sup>* 1</sup>,
+            </span>
+            <span class="author-block">
+                <a href="mailto:ou524u@stu.pku.edu.cn">Haoru Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+                <a href="mailto:wtzhu@pku.edu.cn">Wentao Zhu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+                <a href="mailto:maxiaoxuan@pku.edu.cn">Xiaoxuan Ma</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+                <a href="mailto:yizhou.wang@pku.edu.cn">Yizhou Wang</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup> Peking University </span><br>
+            <span class="author-block"><sup>2</sup> Collaborator 1 Institution</span><br>
+            <span class="author-block"><sup>*</sup> Equal contribution, random order</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link -->
+              <span class="link-block">
+                <a href="https://your-paper.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link -->
+              <span class="link-block">
+                <a href="https://github.com/your-repo" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- Video Link -->
+              <span class="link-block">
+                <a href="https://youtube.com/your-video" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-play-circle"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+         <p>
+          Solving Electromagnetic Inverse Scattering Problems (EISP) is fundamental in applications such as medical imaging,
+          where the goal is to reconstruct the relative permittivity from scattered electromagnetic field. This inverse process
+          is inherently ill-posed and highly nonlinear, making it particularly challenging.
+          A recent machine learning-based approach shows promising results by leveraging continuous implicit functions.
+          However, it requires case-specific optimization, lacks generalization to unseen data, and fails under sparse transmitter
+          setups (e.g., with only one transmitter).
+          To address these limitations, we revisit EISP from a physics-informed perspective, reformulating it as a two-stage
+          transmission–scattering process. This formulation reveals the induced current as a generalizable intermediate representation,
+          effectively decoupling the nonlinear scattering process from the ill-posed inverse problem.
+          Built on this insight, we propose the <strong>first generalizable physics-driven framework</strong> for EISP, comprising
+          a current estimator and a permittivity solver, working in an <strong>end-to-end</strong> manner. The current estimator
+          explicitly learns the induced current as a physical bridge between the incident and scattered field, while the permittivity
+          solver computes the relative permittivity directly from the estimated induced current.
+          Extensive experiments show that our method outperforms state-of-the-art approaches in reconstruction accuracy,
+          generalization, and robustness. Notably, it achieves high-quality results even with a <strong>single transmitter</strong>—a
+          setting where prior methods consistently fail. This work offers a fundamentally new perspective on electromagnetic inverse 
+          scattering and represents a major step toward cost-effective practical solutions for electromagnetic imaging.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract -->
+
+    <!-- Teaser Figure -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div style="text-align: center;">
+          <img src="assets/teaser_v2.png" alt="Teaser Figure" width="80%">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+          <strong>Comparison between our method and the previous state-of-the-art.</strong> <strong>Left:</strong>
+          Img-Interiors requires case-specific optimization to reconstruct the permittivity and lacks generalization capability.
+          In contrast, our method is the <em>first generalizable physics-driven</em> framework that operates in an 
+          <em>end-to-end</em>, <em>feed-forward</em> manner for solving inverse scattering. By modeling the induced 
+          current as a generalizable intermediate representation, our method decouples the nonlinear scattering process 
+          from the ill-posed inversion, enabling data-driven training with strong generalization. <strong>Right:</strong> 
+          Our method yields more accurate reconstructions than on unseen cases. It remains robust even with a <em>single</em> 
+          transmitter and achieves real-time inference with over $300{,}000 \times$ speed-up.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Teaser Figure -->
+    
+    <!-- Video/Overview -->
+    <div class="column is-centered has-text-centered">
+      <h2 class="title is-3">Video Overview</h2>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- Video Embed -->
+        <div class="publication-video">
+        <video controls width="100%">
+          <source src="assets/video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+        <div class="content has-text-justified">
+          <p>
+            Optional description of your video content and what viewers should pay attention to.
+            For example: "This X-minute video provides an overview of our method and demonstrates
+            its performance compared to baseline approaches on three challenging scenarios."
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Video Overview -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method Overview -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview</h2>
+        <!-- Method Figure -->
+        <div style="text-align: center;">
+          <img src="assets/pipeline.png" alt="Method Figure" width="100%">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            <strong> Overview of our method. </strong> Our pipeline consists of two core modules: (1) a current estimator and (2) a permittivity solver. 
+            Given the scattered electromagnetic field $\mathbf{E}^\text{s}$ and a query position $\bf{x}$, the current estimator 
+            predicts the induced current $\hat{\mathbf{J}}({\bf{x}})$. To enhance spatial expressiveness, we apply positional 
+            encoding $\gamma({\bf{x}})$ to the query position. The permittivity solver then computes the relative 
+            permittivity based on the predicted current $\hat{\mathbf{J}}$ and the incident field $\mathbf{E}^\text{i}$, following 
+            Eq. (5). The final relative permittivity $\hat{\boldsymbol{\epsilon}_r}$ is obtained by aggregating 
+            predictions across all $N$ transmitters. During training, dashed lines indicate the applied loss terms.
+          </p>
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            We decouple EISP into two physical stages: inverse scattering and inverse transmission, 
+            and identify the induced current field $\mathbf{J}$ as a crucial role in bridging the relative permittivity 
+            and the scattered field in EISP. Building on this insight, we design a framework comprising a current 
+            estimator and a permittivity solver, as illustrated in pipeline. The current estimator solves 
+            the inverse scattering problem by utilizing a neural network to learn the mapping from the scattered field 
+            $\mathbf{E}^\text{s}$ to the current field $\mathbf{J}$. The permittivity solver addresses the inverse transmission problem, 
+            which can directly compute the relative permittivity $\boldsymbol{\epsilon}_r$ from the incident 
+            field $\mathbf{E}^\text{i}$ and the predicted current field $\hat{\mathbf{J}}$. After obtaining the relative permittivity estimates 
+            $\{\hat{\boldsymbol{\epsilon}_r}^\text{(1)}, \hat{\boldsymbol{\epsilon}_r}^\text{(2)}, \dots, \hat{\boldsymbol{\epsilon}_r}^{(N)}\}$ 
+            for each transmitter, we then fuse the relative permittivity values across all transmitters to produce the final relative permittivity $\hat{\boldsymbol{\epsilon}_r}$.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Method Overview -->
+
+    <!-- Results -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <!-- Quantitative Results -->
+        <div class="content has-text-justified">
+          <p>
+            Qualitative comparison under the multiple-transmitter setting:
+          </p>
+        </div>
+        <div style="text-align: center;">
+          <img src="assets/synthetic_0.05noise_N_inc=16.jpg" alt="Quantitative Results" width="80%">
+        </div>
+        
+        <!-- Qualitative Results -->
+        <div class="content has-text-justified">
+          <p>
+            Qualitative comparison under the single-transmitter setting:
+          </p>
+        </div>
+        <div style="text-align: center;">
+          <img src="assets/synthetic_0.05noise_N_inc=1.jpg" alt="Qualitative Results" width="100%">
+        </div>
+
+        <!-- 3D Results-->
+         <div class="content has-text-justified">
+          <p>
+            Qualitative comparison under the single-transmitter setting for 3D reconstruction:
+          </p>
+        </div>
+
+        <div style="text-align: center;">
+          <img src="assets/3D_fig.jpg" alt="Qualitative Results" width="100%">
+        </div>
+      </div>
+    </div>
+    <!--/ Results -->
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{yourcitationkey,
+  author    = {Your Name and Collaborator 1 and Collaborator 2 and Supervisor},
+  title     = {Your Paper Title},
+  booktitle = {Proceedings of the XX Conference on...},
+  year      = {2023},
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            You are free to use the template for your own project page. The template is inspired by 
+            <a href="https://nerfies.github.io">nerfies</a> and other project pages in the field.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JS imports -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bulma-slider@2.0.4/dist/js/bulma-slider.min.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]  // 允许行内公式使用 $...$ 或 \(...\)
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- Custom JS -->
+<script>
+  // Initialize any carousels or sliders
+  bulmaCarousel.attach('#results-carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    infinite: true,
+    autoplay: true
+  });
+</script>
+
+</body>
+</html>
