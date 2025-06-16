@@ -2,10 +2,11 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Your project description">
+  <meta name="description" content="Generalizable Neural Electromagnetic
+Inverse Scattering">
   <meta name="keywords" content="Your, Keywords, Here">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Project Title</title>
+  <title>Generalizable Neural Electromagnetic Inverse Scattering</title>
   
   <!-- CSS imports -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
@@ -67,33 +68,34 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Generalizable Neural Electromagnetic
 Inverse Scattering<br>
-            <small>
+            <!-- <small>
               <span style="font-size: 60%;">arxiv 2025</span>
-            </small>
+            </small> -->
           </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-                <a href="mailto:ez_cheng@stu.pku.edu.cn">Yizhe Cheng</a><sup>* 1</sup>,
+                <a href="mailto:ez_cheng@stu.pku.edu.cn">Yizhe Cheng</a>,
             </span>
             <span class="author-block">
-                <a href="mailto:tianchunxun@stu.pku.edu.cn">Chunxun Tian</a><sup>* 1</sup>,
+                <a href="mailto:tianchunxun@stu.pku.edu.cn">Chunxun Tian</a>,
             </span>
             <span class="author-block">
-                <a href="mailto:ou524u@stu.pku.edu.cn">Haoru Wang</a><sup>1</sup>,
+                <a href="mailto:ou524u@stu.pku.edu.cn">Haoru Wang</a>,
             </span>
             <span class="author-block">
-                <a href="mailto:wtzhu@pku.edu.cn">Wentao Zhu</a><sup>1</sup>,
+                <a href="mailto:wtzhu@pku.edu.cn">Wentao Zhu</a>,
             </span>
             <span class="author-block">
-                <a href="mailto:maxiaoxuan@pku.edu.cn">Xiaoxuan Ma</a><sup>1</sup>,
+                <a href="mailto:maxiaoxuan@pku.edu.cn">Xiaoxuan Ma</a>,
             </span>
             <span class="author-block">
-                <a href="mailto:yizhou.wang@pku.edu.cn">Yizhou Wang</a><sup>1</sup>
+                <a href="mailto:yizhou.wang@pku.edu.cn">Yizhou Wang</a>
             </span>
           </div>
 
-          <div class="is-size-6 publication-authors">
-            <span class="author-block"><sup>1</sup> Peking University </span><br>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"> Peking University </span><br>
+            <!-- <span class="author-block"><sup>2</sup> Collaborator 1 Institution</span><br> -->
             <span class="author-block"><sup>*</sup> Equal contribution, random order</span>
           </div>
 
@@ -110,7 +112,7 @@ Inverse Scattering<br>
               </span>
               <!-- Code Link -->
               <span class="link-block">
-                <a href="https://github.com/your-repo" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/gomenei/Eletromagnetic-inverse-scattering" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
@@ -136,6 +138,23 @@ Inverse Scattering<br>
 
 <section class="section">
   <div class="container is-max-desktop">
+    <!-- Teaser Figure -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div style="text-align: center;">
+          <img src="assets/teaser_v2.png" alt="Teaser Figure" width="100%">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+          First generalizable, physics-driven framework for inverse scattering. Our method operates end-to-end in a feed-forward manner
+          —yielding more accurate reconstructions than on unseen cases. It remains robust even with a <em>single</em> 
+          transmitter and achieves real-time inference with over $300{,}000 \times$ speed-up.
+        </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Teaser Figure -->
+
     <!-- Abstract -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -164,28 +183,6 @@ Inverse Scattering<br>
       </div>
     </div>
     <!--/ Abstract -->
-
-    <!-- Teaser Figure -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div style="text-align: center;">
-          <img src="assets/teaser_v2.png" alt="Teaser Figure" width="80%">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-          <strong>Comparison between our method and the previous state-of-the-art.</strong> <strong>Left:</strong>
-          Img-Interiors requires case-specific optimization to reconstruct the permittivity and lacks generalization capability.
-          In contrast, our method is the <em>first generalizable physics-driven</em> framework that operates in an 
-          <em>end-to-end</em>, <em>feed-forward</em> manner for solving inverse scattering. By modeling the induced 
-          current as a generalizable intermediate representation, our method decouples the nonlinear scattering process 
-          from the ill-posed inversion, enabling data-driven training with strong generalization. <strong>Right:</strong> 
-          Our method yields more accurate reconstructions than on unseen cases. It remains robust even with a <em>single</em> 
-          transmitter and achieves real-time inference with over $300{,}000 \times$ speed-up.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Teaser Figure -->
     
     <!-- Video/Overview -->
     <div class="column is-centered has-text-centered">
@@ -200,13 +197,6 @@ Inverse Scattering<br>
           Your browser does not support the video tag.
         </video>
       </div>
-        <div class="content has-text-justified">
-          <p>
-            Optional description of your video content and what viewers should pay attention to.
-            For example: "This X-minute video provides an overview of our method and demonstrates
-            its performance compared to baseline approaches on three challenging scenarios."
-          </p>
-        </div>
       </div>
     </div>
     <!--/ Video Overview -->
@@ -225,30 +215,22 @@ Inverse Scattering<br>
         </div>
         <div class="content has-text-justified">
           <p>
-            <strong> Overview of our method. </strong> Our pipeline consists of two core modules: (1) a current estimator and (2) a permittivity solver. 
-            Given the scattered electromagnetic field $\mathbf{E}^\text{s}$ and a query position $\bf{x}$, the current estimator 
-            predicts the induced current $\hat{\mathbf{J}}({\bf{x}})$. To enhance spatial expressiveness, we apply positional 
-            encoding $\gamma({\bf{x}})$ to the query position. The permittivity solver then computes the relative 
-            permittivity based on the predicted current $\hat{\mathbf{J}}$ and the incident field $\mathbf{E}^\text{i}$, following 
-            Eq. (5). The final relative permittivity $\hat{\boldsymbol{\epsilon}_r}$ is obtained by aggregating 
-            predictions across all $N$ transmitters. During training, dashed lines indicate the applied loss terms.
+            <strong>Overview of our method.</strong> We decouple EISP into two physical stages: 
+            inverse scattering and inverse transmission, identifying the induced current field 
+            $\mathbf{J}$ as bridging the relative permittivity and scattered field. Our framework 
+            consists of (1) a current estimator that predicts $\hat{\mathbf{J}}({\bf{x}})$ 
+            from the scattered field $\mathbf{E}^\text{s}$ (using positional encoding 
+            $\gamma({\bf{x}})$ for spatial expressiveness) and (2) a permittivity solver 
+            that computes $\hat{\boldsymbol{\epsilon}_r}$ from $\hat{\mathbf{J}}$ and incident 
+            field $\mathbf{E}^\text{i}$. The current estimator learns the mapping $\mathbf{E}^\text{s} 
+            \rightarrow \mathbf{J}$ to solve inverse scattering, while the permittivity solver 
+            addresses inverse transmission by directly calculating $\boldsymbol{\epsilon}_r$ 
+            from $\mathbf{E}^\text{i}$ and $\hat{\mathbf{J}}$. Final $\hat{\boldsymbol{\epsilon}_r}$ 
+            is obtained by aggregating estimates $\{\hat{\boldsymbol{\epsilon}_r}^\text{(1)}, 
+            \dots, \hat{\boldsymbol{\epsilon}_r}^{(N)}\}$ across all $N$ transmitters.
           </p>
         </div>
 
-        <div class="content has-text-justified">
-          <p>
-            We decouple EISP into two physical stages: inverse scattering and inverse transmission, 
-            and identify the induced current field $\mathbf{J}$ as a crucial role in bridging the relative permittivity 
-            and the scattered field in EISP. Building on this insight, we design a framework comprising a current 
-            estimator and a permittivity solver, as illustrated in pipeline. The current estimator solves 
-            the inverse scattering problem by utilizing a neural network to learn the mapping from the scattered field 
-            $\mathbf{E}^\text{s}$ to the current field $\mathbf{J}$. The permittivity solver addresses the inverse transmission problem, 
-            which can directly compute the relative permittivity $\boldsymbol{\epsilon}_r$ from the incident 
-            field $\mathbf{E}^\text{i}$ and the predicted current field $\hat{\mathbf{J}}$. After obtaining the relative permittivity estimates 
-            $\{\hat{\boldsymbol{\epsilon}_r}^\text{(1)}, \hat{\boldsymbol{\epsilon}_r}^\text{(2)}, \dots, \hat{\boldsymbol{\epsilon}_r}^{(N)}\}$ 
-            for each transmitter, we then fuse the relative permittivity values across all transmitters to produce the final relative permittivity $\hat{\boldsymbol{\epsilon}_r}$.
-          </p>
-        </div>
       </div>
     </div>
     <!--/ Method Overview -->
@@ -257,38 +239,42 @@ Inverse Scattering<br>
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Results</h2>
-        <!-- Quantitative Results -->
-        <div class="content has-text-justified">
-          <p>
-            Qualitative comparison under the multiple-transmitter setting:
-          </p>
-        </div>
-        <div style="text-align: center;">
-          <img src="assets/synthetic_0.05noise_N_inc=16.jpg" alt="Quantitative Results" width="100%">
-        </div>
-        
-        <!-- Qualitative Results -->
-        <div class="content has-text-justified">
-          <p>
-            Qualitative comparison under the single-transmitter setting:
-          </p>
-        </div>
-        <div style="text-align: center;">
-          <img src="assets/synthetic_0.05noise_N_inc=1.jpg" alt="Qualitative Results" width="100%">
-        </div>
 
-        <!-- 3D Results-->
-         <div class="content has-text-justified">
-          <p>
-            Qualitative comparison under the single-transmitter setting for 3D reconstruction:
+        <!-- Single-Transmitter Qualitative -->
+        <div class="content has-text-justified" style="margin-bottom: 2rem;">
+          <p style="font-weight: bold;">
+            Qualitative comparison under the <span style="font-style: italic;">single-transmitter</span> setting:
           </p>
         </div>
 
-        <div style="text-align: center;">
-          <img src="assets/3D_fig.jpg" alt="Qualitative Results" width="100%">
+        <div style="text-align: center; margin-bottom: 4rem;">
+          <img src="assets/synthetic_0.05noise_N_inc=1.jpg" alt="Qualitative Results (Single-Transmitter)" width="100%">
+        </div>
+
+        <!-- Multiple-Transmitter Qualitative -->
+        <div class="content has-text-justified" style="margin-bottom: 2rem;">
+          <p style="font-weight: bold;">
+            Qualitative comparison under the <span style="font-style: italic;">multiple-transmitter</span> setting:
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 4rem;">
+          <img src="assets/synthetic_0.05noise_N_inc=16.jpg" alt="Quantitative Results (Multi-Transmitter)" width="100%">
+        </div>
+
+        <!-- 3D Single-Transmitter -->
+        <div class="content has-text-justified" style="margin-bottom: 2rem;">
+          <p style="font-weight: bold;">
+            Qualitative comparison under the <span style="font-style: italic;">single-transmitter</span> setting for 3D reconstruction:
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 4rem;">
+          <img src="assets/3D_fig.jpg" alt="3D Reconstruction (Single-Transmitter)" width="100%">
         </div>
       </div>
     </div>
+
     <!--/ Results -->
   </div>
 </section>
@@ -296,16 +282,16 @@ Inverse Scattering<br>
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{yourcitationkey,
-  author    = {Your Name and Collaborator 1 and Collaborator 2 and Supervisor},
-  title     = {Your Paper Title},
-  booktitle = {Proceedings of the XX Conference on...},
-  year      = {2023},
+    <pre><code>@inproceedings{2025generalizable,
+  author    = {Yizhe Cheng and Chunxun Tian and Haoru Wang and Wentao Zhu and Xiaoxuan Ma and Yizhou Wang},
+  title     = {Generalizable Neural Electromagnetic Inverse Scattering},
+  booktitle = {},
+  year      = {2025},
 }</code></pre>
   </div>
 </section>
 
-<footer class="footer">
+<footer class="footer" style="font-size: 0.85rem;">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -315,8 +301,7 @@ Inverse Scattering<br>
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            You are free to use the template for your own project page. The template is inspired by 
-            <a href="https://nerfies.github.io">nerfies</a> and other project pages in the field.
+            The template is inspired by <a href="https://nerfies.github.io">nerfies</a> and other project pages in the field.
           </p>
         </div>
       </div>
