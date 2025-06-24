@@ -1,1 +1,1 @@
-# Generalizable-EISP
+# GenEISP
