@@ -66,7 +66,6 @@ pip install -r requirements.txt
 2. **Organize the model weights**  
    Unzip the downloaded files and place them in the `model/` directory. 
 
----
 
 ## 3. **Evaluation**
 
