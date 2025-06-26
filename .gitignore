@@ -1,0 +1,7 @@
+__pycache__/
+data/
+fig/
+3Dfig/
+model/
+wandb/
+test.py

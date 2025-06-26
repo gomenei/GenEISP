@@ -1,0 +1,46 @@
+DEBUG: false
+advanced:
+  J_epsilon_rate: 0.01
+  TVLoss_weight: 0.0001
+  dimesions: 10
+  grad_clip: true
+  limit_output_range: true
+  max_norm: 0.001
+  output_lower_limit: 1
+  output_upper_limit: 3.2
+  phy_loss_rate: 1.0e-07
+  pos_encoding: true
+  fig_save_interval: 100
+enable_wandb: true
+experiment:
+  baseline: Es_xy_to_J
+  channels: [0, 1, 2, 3, 4, 5, 6, 7]
+  image_input: true
+  loss_terms:
+    J_loss: true
+    TV_loss: false
+    phy_loss: true
+    second_derivative_loss: false
+  supervise: J_epsilon
+  test_noise_ratio: 0
+  train_noise_ratio: 0
+global:
+  experiment_name: FDI
+  fig_path: ./fig/{experiment_name}
+  model_save_path: ./model/{experiment_name}
+  test_dataset_path: ./data/FDI_test_data.pkl
+  train_dataset_path: ./data/IF_train_10000/IF_train_data_10000_ch0_grid224.pkl
+model:
+  D: 8
+  W: 256
+  skips: []
+  epsilon_output: false
+  output_rate: 0.01
+training:
+  BATCH_SIZE: 32
+  LEARNING_RATE: 0.001
+  gamma: 0.9
+  lr_decrease: true
+  num_epochs: 300
+  save_interval: 20
+  step_size: 10

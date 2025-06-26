@@ -1,0 +1,49 @@
+DEBUG: false
+advanced:
+  J_loss_rate: 1000000000000
+  Es_rate: 1
+  J_epsilon_rate: 10
+  TVLoss_weight: 0.0001
+  dimesions: 10
+  grad_clip: true
+  limit_output_range: true
+  max_norm: 0.0001
+  output_lower_limit: 1
+  output_upper_limit: 2.5
+  phy_loss_rate: 1000000000
+  pos_encoding: true
+  fig_save_interval: 100
+enable_wandb: false
+experiment:
+  baseline: Es_xy_to_J
+  channels: [0]
+  image_input: true
+  loss_terms:
+    J_loss: true
+    TV_loss: false
+    phy_loss: true
+    second_derivative_loss: false
+  supervise: J_epsilon
+  test_noise_ratio: 0
+  train_noise_ratio: 0
+global:
+  experiment_name: 3Dmnist_noise00
+  fig_path: ./fig/{experiment_name}
+  model_save_path: ./model/{experiment_name}
+  test_dataset_path: ./data/test/3Dmnist_test
+  train_dataset_path: ./3Ddata/syn3D_sample0_25X25_0000to5000_250426_new
+model:
+  D: 8
+  W: 256
+  skips: []
+  epsilon_output: false
+  output_rate: 2.0e-5
+
+training:
+  BATCH_SIZE: 32
+  LEARNING_RATE: 0.001
+  gamma: 0.9
+  lr_decrease: false
+  num_epochs: 600
+  save_interval: 20
+  step_size: 1
