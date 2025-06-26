@@ -27,8 +27,8 @@ experiment:
 global:
   experiment_name: FDI
   fig_path: ./fig/{experiment_name}
-  model_save_path: ./model/{experiment_name}
-  test_dataset_path: ./data/FDE_test_data.pkl
+  model_save_path: ./model/FDI
+  test_dataset_path: ./data/test/IF/FDE_test.pkl
   train_dataset_path: ./data/IF_train_10000/IF_train_data_10000_ch0_grid224.pkl
 model:
   D: 8
