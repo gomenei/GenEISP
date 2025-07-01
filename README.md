@@ -116,7 +116,7 @@ TODO -->
 If you find this work useful for your research, please consider citing:
 
 ```bibtex
-@article{cheng2025generalizable,
+@article{cheng2025generalizableneuralelectromagneticinverse,
   author    = {Yizhe Cheng and Chunxun Tian and Haoru Wang and Wentao Zhu and Xiaoxuan Ma and Yizhou Wang},
   title     = {Generalizable Neural Electromagnetic Inverse Scattering},
   journal   = {arXiv preprint arXiv:2506.21349},
