@@ -4,7 +4,7 @@ This repository contains the PyTorch implementation of the paper **"GenEISP: Gen
 
 <div>
     <a href="https://gomenei.github.io/GenEISP/"><strong>🌐 Project Page</strong></a> |
-    <a href="https://arxiv.org/abs/2506.21349v1"><strong>📄 Paper</strong></a> |
+    <a href="https://arxiv.org/abs/2506.21349"><strong>📄 Paper</strong></a> |
     <a href="https://youtu.be/HaSAXk7yOPE"><strong>▶️ Video</strong></a>
 </div>
 
